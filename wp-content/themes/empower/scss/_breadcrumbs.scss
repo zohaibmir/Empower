@@ -1,0 +1,26 @@
+.crumbs {
+    $crumb-border-size: 0px;    
+    $crumb-slash: "-";
+    $crumb-font-size: rem-calc(12);
+    $crumb-font-color: $blue;
+    $crumb-font-color-current: $black;    
+    $crumb-font-transform: none;
+    $crumb-link-decor: none;
+    $crumb-padding: rem-calc(5 14 5) !default;
+    $crumb-side-padding: rem-calc(15) !default;
+    
+    @include crumb-container;
+    li {
+        @include crumbs;
+    }
+    
+    font-weight:bold;
+    
+    
+    
+}
+
+.crumbs li.current:before {
+    content: "»";
+    top:0;
+    }

@@ -1,0 +1,68 @@
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea, select {
+    
+    height:rem-calc(45);
+}
+
+label {
+    font-size:rem-calc(18px);
+
+}
+
+::-webkit-input-placeholder {
+    padding-left:10px !important;
+    font-size: 16px;
+    font-family: $font-BrandonGrotesque-Regular;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    padding-left:10px !important;
+    font-size: 16px;
+    font-family: $font-BrandonGrotesque-Regular;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    padding-left:10px !important;
+    font-size: 16px;
+    font-family: $font-BrandonGrotesque-Regular;
+}
+
+:-ms-input-placeholder {  
+    padding-left:10px !important;
+    font-size: 16px;
+    font-family:$font-BrandonGrotesque-Regular;
+    
+}
+
+input[type="submit"] {
+    $button-font-family: $font-BrandonGrotesque-Bold;  
+    $button-font-color-alt: $white;
+    $button-radius:$global-radius;
+    $button-font-sml:rem-calc(20);
+    
+    // $padding - Used to build padding for buttons Default: $button-med or rem-calc(12)
+    $padding: $button-lrg;
+    // Primary color set in settings file. Default: $primary-color.
+    $bg: $etheme2;
+    // If true, set to button radius which is $global-radius or explicitly set radius amount in px (ex. $radius:10px). Default:false.
+    $radius: false;
+    // We can set $full-width:true to remove side padding extend width. Default:false
+    $full-width: false;
+    // We can set $disabled:true to create a disabled transparent button. Default:false
+    $disabled: false;
+    // $is-input - <input>'s and <button>'s take on strange padding. We added this to help fix that. Default:false
+    $is-prefix: false;
+    
+    $bg-hover:$bg;
+    
+    $transition: false;
+    @include button($padding, $bg, $radius, $full-width, $disabled, $is-prefix,$bg-hover,$transition);
+    
+    font-size: 13px;
+    padding: rem-calc(15);
+}
+
+.header-search {
+        input[type="text"] {
+            height:60px;
+        }   
+}

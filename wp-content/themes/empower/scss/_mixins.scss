@@ -1,0 +1,24 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin border($border-style: $default-border-style, $width:$default-border-width, $color:$black) {
+    border-style: $border-style;
+    border-width: $width;
+    border-color: $color;
+}
+
+
+@mixin background-image($background-size:$default-background-size, $repeat:$default-background-repeat) {
+     background-position: top center;     
+    -webkit-background-size: $background-size;            
+    -moz-background-size: $background-size;            
+    -o-background-size: $background-size;            
+    background-size: $background-size;   
+    background-repeat:$repeat;
+    
+}
+

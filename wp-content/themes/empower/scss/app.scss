@@ -1,0 +1,203 @@
+@import "settings";
+@import "foundation";
+@import "colors";
+@import "typography";
+@import "mixins";
+@import "header";
+@import "buttons";
+@import "forms";
+@import "lists";
+@import "breadcrumbs";
+@import "footer";
+
+
+html, body { font-size: $base-font-size; }
+
+// Default body styles
+body {
+    background: $body-bg;
+    color: $etheme3;
+    padding: rem-calc(0);
+    margin: rem-calc(0);
+    font-family: $font-BrandonGrotesque-Regular;
+    font-weight: $body-font-weight;
+    font-style: $body-font-style;
+    line-height: $base-line-height; 
+    position: relative;
+    cursor: $cursor-default-value;
+    height:100%;
+    width:100%;
+    
+
+    h1,h2,h3,h4,h5,h6 {
+
+        font-family: $font-BrandonGrotesque-Bold;
+        font-weight: $header-font-weight;
+        font-style: $header-font-style;
+        color: $etheme3;        
+        line-height: $header-line-height;
+
+    }
+    h1 {
+
+        margin-top:rem-calc(20);
+        margin-bottom:rem-calc(20);
+        font-size:26px;
+        text-transform:uppercase;
+
+
+    }
+    .em-search-wrapper {
+        display: none !important;
+    }
+    .events-table {
+        width: 100%;
+    }
+    .aligncenter {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: rem-calc(10);
+    }
+
+    .alignleft {
+        float: left;
+        padding: rem-calc(10);
+    }
+
+    .alignright {
+        float: right;
+        padding: rem-calc(10);
+    }
+
+    .slicknav_menu {
+        display:none;
+        @media #{$small-only} {
+            display:block;
+        }
+    }
+
+    h2 {
+        font-size:22px;
+    }
+    a {
+        color: $etheme3;
+    }
+    p a {
+         text-decoration: underline;
+    }
+    .welcome-link {
+        position: absolute;
+        margin-top: -20px;
+        text-decoration: underline;
+         @media #{$small-only} {
+             display:none;
+         }
+        &:hover {
+            color: $etheme3;
+        }
+    }
+    .header-right {
+        text-align: right;            
+        @media #{$small-only} {
+            text-align: center;
+        }
+    }
+
+    .landingpage {
+        background-color:$etheme2;
+        height:100%;
+        width:100%;
+        display:table;
+        .landing-content {
+            text-align: center;
+            height: 100%;
+            display: table-cell;
+            vertical-align: middle;
+
+            .landing-btns {
+                margin-top:rem-calc(100);
+
+                a {
+                    margin-left:rem-calc(30);
+                    &:first-child {
+                        margin-left:rem-calc(0);
+                    }
+                    @media #{$small-only} {                    
+                        margin-left:rem-calc(0);
+                    }
+                }
+            }
+        }
+    }
+
+    #content {        
+
+        .bx-viewport {
+            height:auto !important;
+        }
+        .bx-clone {
+            display:none !important;
+        }
+        .orbit-section {
+            margin-bottom:rem-calc(50);
+        }
+
+        .main-text {
+            font-size:$default-font-size;
+            padding-right:rem-calc(40);
+            p {
+                font-size:$default-font-size;
+            }
+
+            .pubdate {
+                font-size:22px;
+                color:$etheme4;                
+            }
+            .publisher {
+                font-size:14px;
+            }
+
+            &.blog {
+                letter-spacing: rem-calc(3);
+            }
+        }
+        .home-right {
+            background-color:$etheme1;
+            padding: rem-calc(20);
+            h1 {
+                font-family: $font-BrandonGrotesque-Light;
+                margin-top:rem-calc(50);
+            }
+        }
+        .video {
+            margin-bottom: rem-calc(0);
+            max-width:357px;
+            .video-title {
+                background-color:$etheme2;
+                color:$etheme4;
+                width:100%;
+                padding:rem-calc(15);
+                position:relative;
+                z-index:1;
+                top:-40px;
+            }
+
+            .playbtnCss {
+                background: url("../images/playicon.png") no-repeat center center !important;
+                top:-50px;
+                max-width:357px;
+            }
+        }
+        .map-section {
+            margin-top:rem-calc(20);
+        }
+    }
+
+    hr {
+        border-color:$etheme3;
+    }
+
+
+}
+

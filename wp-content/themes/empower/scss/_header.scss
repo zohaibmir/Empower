@@ -1,0 +1,19 @@
+header {
+    margin-top:rem-calc(30);
+    background-color:$white;
+        .logo {
+            margin-top:rem-calc(15);
+            text-align:center;
+                    span {
+                        font-family:$font-BrandonGrotesque-Light;
+                        font-size:18px;
+                        color: $etheme3;
+                    }
+        }
+
+        .topnav-section {
+              @media #{$small-only} {
+                    display:none;
+     }
+        }
+}

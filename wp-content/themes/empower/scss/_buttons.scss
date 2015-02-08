@@ -1,0 +1,220 @@
+.ebutton {
+    $button-font-family: $font-BrandonGrotesque-Bold;
+    $button-font-color-alt: $etheme2;
+    $button-radius:10px;
+    // $padding - Used to build padding for buttons Default: $button-med or rem-calc(12)
+    $padding: $button-med;
+    // Primary color set in settings file. Default: $primary-color.
+    $bg: $white;
+    // If true, set to button radius which is $global-radius or explicitly set radius amount in px (ex. $radius:10px). Default:false.
+    $radius: true;
+    // We can set $full-width:true to remove side padding extend width. Default:false
+    $full-width: false;
+    
+    // We can set $disabled:true to create a disabled transparent button. Default:false
+    $disabled: false;
+    // $is-input - <input>'s and <button>'s take on strange padding. We added this to help fix that. Default:false
+    $is-prefix: false;
+    
+    $bg-hover:$bg;
+    
+    $transition: false;
+    @include button($padding, $bg, $radius, $full-width, $disabled, $is-prefix,$bg-hover,$transition);
+    @media #{$large} { 
+        min-width:rem-calc(150);
+    }
+    @media #{$small-only} { 
+        width: 100%;
+    }
+    
+}
+
+.button-em {
+    $button-font-family: $font-BrandonGrotesque-Bold;  
+    $button-font-color-alt: $white;
+    $button-radius:$global-radius;
+    $button-font-sml:rem-calc(20);
+    
+    // $padding - Used to build padding for buttons Default: $button-med or rem-calc(12)
+    $padding: $button-lrg;
+    // Primary color set in settings file. Default: $primary-color.
+    $bg: $etheme2;
+    // If true, set to button radius which is $global-radius or explicitly set radius amount in px (ex. $radius:10px). Default:false.
+    $radius: false;
+    // We can set $full-width:true to remove side padding extend width. Default:false
+    $full-width: false;
+    // We can set $disabled:true to create a disabled transparent button. Default:false
+    $disabled: false;
+    // $is-input - <input>'s and <button>'s take on strange padding. We added this to help fix that. Default:false
+    $is-prefix: false;
+    
+    $bg-hover:$bg;
+    
+    $transition: false;
+    @include button($padding, $bg, $radius, $full-width, $disabled, $is-prefix,$bg-hover,$transition);
+    
+    font-size: 13px;
+    padding: rem-calc(15);
+}
+
+.button-medium {
+    
+    $button-font-family: $font-BrandonGrotesque-Light;  
+    $button-font-color-alt: $etheme3;
+    $button-radius:$global-radius;
+    $button-font-sml:rem-calc(20);
+    
+    // $padding - Used to build padding for buttons Default: $button-med or rem-calc(12)
+    $padding: $button-lrg;
+    // Primary color set in settings file. Default: $primary-color.
+    $bg: $etheme1;
+    // If true, set to button radius which is $global-radius or explicitly set radius amount in px (ex. $radius:10px). Default:false.
+    $radius: false;
+    // We can set $full-width:true to remove side padding extend width. Default:false
+    $full-width: false;
+    // We can set $disabled:true to create a disabled transparent button. Default:false
+    $disabled: false;
+    // $is-input - <input>'s and <button>'s take on strange padding. We added this to help fix that. Default:false
+    $is-prefix: false;
+    
+    $bg-hover:$bg;
+    
+    $transition: false;
+    @include button($padding, $bg, $radius, $full-width, $disabled, $is-prefix,$bg-hover,$transition);
+    padding: rem-calc(15);
+}
+
+.categorybtn {
+    
+    
+    
+    
+    // $padding - Used to build padding for buttons Default: $button-med or rem-calc(12)
+    $padding: $button-lrg;
+    // Primary color set in settings file. Default: $primary-color.
+    $bg: $white;
+    // If true, set to button radius which is $global-radius or explicitly set radius amount in px (ex. $radius:10px). Default:false.
+    $radius: false;
+    // We can set $full-width:true to remove side padding extend width. Default:false
+    $full-width: true;
+    // We can set $disabled:true to create a disabled transparent button. Default:false
+    $disabled: false;
+    // $is-input - <input>'s and <button>'s take on strange padding. We added this to help fix that. Default:false
+    $is-prefix: false;
+    
+    $bg-hover:$bg;
+    
+    $transition: false;
+    @include button($padding, $bg, $radius, $full-width, $disabled, $is-prefix,$bg-hover,$transition);
+    
+}
+
+.postfixbtn {
+    
+    $button-font-family: $font-BrandonGrotesque-Bold;     
+    $button-font-color-alt: $white;
+    $button-margin-bottom: rem-calc(0);
+    
+    
+    // $padding - Used to build padding for buttons Default: $button-med or rem-calc(12)
+    $padding: $button-lrg;
+    // Primary color set in settings file. Default: $primary-color.
+    $bg: $theme-color;
+    // If true, set to button radius which is $global-radius or explicitly set radius amount in px (ex. $radius:10px). Default:false.
+    $radius: false;
+    // We can set $full-width:true to remove side padding extend width. Default:false
+    $full-width: true;
+    // We can set $disabled:true to create a disabled transparent button. Default:false
+    $disabled: false;
+    // $is-input - <input>'s and <button>'s take on strange padding. We added this to help fix that. Default:false
+    $is-prefix: true;
+    
+    $bg-hover:$bg;
+    
+    $transition: false;
+    @include button($padding, $bg, $radius, $full-width, $disabled, $is-prefix,$bg-hover,$transition);
+}
+
+.template-btn {
+    
+    $button-font-family: $font-BrandonGrotesque-Bold;     
+    $button-font-color-alt: $secondary-color;
+    $button-radius:$global-radius;
+    $button-font-sml:rem-calc(24);
+    
+    // $padding - Used to build padding for buttons Default: $button-med or rem-calc(12)
+    $padding: $button-sml;
+    // Primary color set in settings file. Default: $primary-color.
+    $bg: $theme-color;
+    // If true, set to button radius which is $global-radius or explicitly set radius amount in px (ex. $radius:10px). Default:false.
+    $radius: true;
+    // We can set $full-width:true to remove side padding extend width. Default:false
+    $full-width: true;
+    // We can set $disabled:true to create a disabled transparent button. Default:false
+    $disabled: false;
+    // $is-input - <input>'s and <button>'s take on strange padding. We added this to help fix that. Default:false
+    $is-prefix: false;
+    
+    $bg-hover:$bg;
+    
+    $transition: false;
+    @include button($padding, $bg, $radius, $full-width, $disabled, $is-prefix,$bg-hover,$transition);
+    
+}
+
+.blue-btn {
+    $button-font-family: $font-BrandonGrotesque-Bold;     
+    $button-font-color-alt: $secondary-color;
+    $button-radius:$global-radius;
+    $button-font-sml:rem-calc(40);
+    
+    // $padding - Used to build padding for buttons Default: $button-med or rem-calc(12)
+    $padding: $button-sml;
+    // Primary color set in settings file. Default: $primary-color.
+    $bg: $secondary-color;
+    // If true, set to button radius which is $global-radius or explicitly set radius amount in px (ex. $radius:10px). Default:false.
+    $radius: true;
+    // We can set $full-width:true to remove side padding extend width. Default:false
+    $full-width: true;
+    // We can set $disabled:true to create a disabled transparent button. Default:false
+    $disabled: false;
+    // $is-input - <input>'s and <button>'s take on strange padding. We added this to help fix that. Default:false
+    $is-prefix: false;
+    
+    $bg-hover:$bg;
+    
+    $transition: false;
+    @include button($padding, $bg, $radius, $full-width, $disabled, $is-prefix,$bg-hover,$transition);
+}
+
+.blue-btn-small {
+    $button-font-family: $font-BrandonGrotesque-Bold;     
+    $button-font-color-alt: $secondary-color;
+    $button-radius:$global-radius;
+    $button-font-med:rem-calc(20);
+    
+    // $padding - Used to build padding for buttons Default: $button-med or rem-calc(12)
+    $padding: $button-med;
+    // Primary color set in settings file. Default: $primary-color.
+    $bg: $secondary-color;
+    // If true, set to button radius which is $global-radius or explicitly set radius amount in px (ex. $radius:10px). Default:false.
+    $radius: false;
+    // We can set $full-width:true to remove side padding extend width. Default:false
+    $full-width: false;
+    // We can set $disabled:true to create a disabled transparent button. Default:false
+    $disabled: false;
+    // $is-input - <input>'s and <button>'s take on strange padding. We added this to help fix that. Default:false
+    $is-prefix: false;
+    
+    $bg-hover:$bg;
+    
+    $transition: false;
+    @include button($padding, $bg, $radius, $full-width, $disabled, $is-prefix,$bg-hover,$transition);
+    font-weight:700;
+    height:47px;
+    padding-top:12px;
+}
+
+input[type=submit] {
+    
+    }

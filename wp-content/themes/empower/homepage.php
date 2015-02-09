@@ -81,7 +81,7 @@ get_header();
 
                         <br />
                         <p>
-                            <button class="button-em">TILMELD DIG KURSET HER</button>
+                            <a class="button-em" href="<?php echo get_post_meta(get_the_ID(), 'timlid_url', true); ?>">TILMELD DIG KURSET HER</a>
                         </p>
                     </div>
                 </div>

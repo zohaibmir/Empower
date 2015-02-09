@@ -52,8 +52,8 @@ define('LOGGED_IN_SALT',   'e<yRlqi3v))A{+~ysGCAL_AUH*V#O{_%wB4{W---DPD<6Ag#Sbg}
 define('NONCE_SALT',       'xEL7L{8g{?)+yM`k;3v):[0dTO(44F(Ot2Nly7&sd5hmxTDO{Ba&;u4%NI2fCVT<');
 
 
-define('WP_HOME','http://localhost/paludanempower');
-define('WP_SITEURL','http://localhost/paludanempower');
+define('WP_HOME','http://localhost/Empower');
+define('WP_SITEURL','http://localhost/Empower');
 /**#@-*/
 
 /**

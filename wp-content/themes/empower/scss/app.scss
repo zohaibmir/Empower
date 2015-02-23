@@ -82,6 +82,10 @@ body {
     }
     a {
         color: $etheme3;
+        &:hover {
+            color: $etheme3;
+            text-decoration: none;
+        }
     }
     p a {
          text-decoration: underline;

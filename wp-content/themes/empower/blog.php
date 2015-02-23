@@ -72,7 +72,7 @@ get_header();
                             'offset' => 0,
                             'category' => '15',
                             'include' => '',
-                            'exclude' => "$currentId",
+                            'exclude' => "",
                             'post_type' => 'post',
                             'post_mime_type' => '',
                             'post_parent' => '',
@@ -97,8 +97,8 @@ get_header();
                                 </div>
                                 <div class="small-10 columns">
                                     <p>
-                                        <?php the_title() ?> <br />
-                                        <span class="publisher">PUBLISERET AF <?php the_author() ?></span>
+                                        <a href="<?php the_permalink() ?>" style="text-decoration: none"><?php the_title() ?> </a><br />
+                                        <!--span class="publisher">PUBLISERET AF <?php the_author() ?></span-->
                                     </p>
                                 </div>
 

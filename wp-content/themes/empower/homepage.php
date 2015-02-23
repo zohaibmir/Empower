@@ -63,16 +63,16 @@ get_header();
                         <?php
                         for ($i = 1; $i <= $num_of_puffers; $i++) {
 
-                            if (get('post_puffer_description', $i) != null) {
+                            if (get('post_puffer_description', $i) != "") {
                                 ?>
                                 <h2> <?php echo get('post_puffer_title', $i) ?></h2>
                                 
                                     <?php echo get('post_puffer_description', $i) ?>
                                 
                                 <br />
-                                <p>
+                                <!--p>
                                     <img src="<?php echo get('post_puffer_image', $i); ?>" alt="Image" />
-                                </p>
+                                </p-->
 
                                 <?php
                             }
@@ -88,12 +88,12 @@ get_header();
 
                 <div class="large-4 small-12 columns">
                     <div class="home-right">
-                        <h2>ANDRE KURSER</h2>
+                        <h2>Anbefalinger</h2>
                         <?php
                        
                         $currentId = get_the_ID();
                         $args = array(
-                            'posts_per_page' => 4,
+                            'posts_per_page' => 5,
                             'offset' => 0,
                             'category' => '3',
                             'include' => '',

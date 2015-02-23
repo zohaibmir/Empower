@@ -70,7 +70,7 @@ get_header();
                         $args = array(
                             'posts_per_page' => '',
                             'offset' => 0,
-                            'category' => '4',
+                            'category' => '15',
                             'include' => '',
                             'exclude' => "$currentId",
                             'post_type' => 'post',

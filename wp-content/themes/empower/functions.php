@@ -25,7 +25,7 @@ add_image_size('hg-phone-slider', 480, 9999);
 
 function frii_register_sidebars() {
     register_sidebar(array(
-        'name' => __('Search Widget', 'frii'),
+        'name' => __('Calender', 'frii'),
         'id' => 'sidebar1',
         'description' => __('', 'frii'),
         'before_widget' => '',
@@ -36,7 +36,7 @@ function frii_register_sidebars() {
 
     register_sidebar(array(
         'id' => 'sidebar2',
-        'name' => 'Map',
+        'name' => 'Events List',
         'description' => '',
         'before_widget' => '',
         'after_widget' => '',

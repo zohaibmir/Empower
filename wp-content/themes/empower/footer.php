@@ -8,7 +8,7 @@
                 <div class="row">
                     <div class="large-12 columns text-center">
                         <p>
-                            ©2014 LifeEmpowerment, Store Kongensgade 75b, 2.tv, 1264, København K. Tel 33 31 10 70.
+                            © 2015 PaludanEmpower, Indiakaj 10, 2100 København Ø. Tel 33 31 10 70.
                         </p>
                         <p>
                             <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images<?php echo $_SESSION["imagefolder"] ?>/linkedin.png" alt="LinkedIn"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

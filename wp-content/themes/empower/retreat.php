@@ -1,6 +1,6 @@
 <?php
 /*  
- * Template Name Posts: Retreat
+ * Template Name : Retreat
  */
 
 

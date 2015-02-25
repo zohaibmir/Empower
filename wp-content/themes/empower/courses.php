@@ -1,6 +1,6 @@
 <?php
 /*  
- * Template Name Posts: Courses
+ * Template Name : Courses
  */
 
 

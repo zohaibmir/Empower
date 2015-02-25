@@ -35,7 +35,7 @@
                         <div class="row">
                             <div class="small-12 columns">
                                 <div class="landing-btns">
-                                    <a href="?p=1&theme=1" class="ebutton">PRIVAT</a><a href="?p=1&theme=2" class="ebutton">ERHVERV</a>
+                                    <a href="?p=1390" class="ebutton">PRIVAT</a><a href="?p=1396" class="ebutton">ERHVERV</a>
                                 </div>
                             </div>
 

@@ -1,14 +1,14 @@
 <?php
-$theme = $_REQUEST["theme"];
+$theme = $wp_query->post->ID;
 if (!session_id())
     session_start();
 
-if ($theme == 2) {
+if ($theme == 1396) {
     $_SESSION["cssfile"] = "2";
     $_SESSION["imagefolder"] = "/erhverv";
     $_SESSION["themeName"] = "Erhverv";
 }
-else if($theme == 1) {
+else if($theme == 1390) {
     $_SESSION["cssfile"] = "";
     $_SESSION["imagefolder"] = "";
     $_SESSION["themeName"] = "Privat";

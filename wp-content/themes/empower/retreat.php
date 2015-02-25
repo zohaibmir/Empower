@@ -1,8 +1,8 @@
 <?php
-/*  
- * Template Name : Retreat
- */
 
+/*
+  Template Name: Retreat
+ */
 
 
 get_header();

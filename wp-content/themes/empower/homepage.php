@@ -1,8 +1,7 @@
 <?php
-/*  
- * Template Name Posts: Two Column
+/*
+  Template Name: Two Column
  */
-
 
 
 get_header();
@@ -11,7 +10,7 @@ get_header();
     <section id="content">
         <?php
         $num_of_images = get_count_group('page_group_slider_image');
-        $num_of_puffers = get_count_group('post_puffer_description');
+        //$num_of_puffers = get_count_group('post_puffer_description');
         while (have_posts()) : the_post();
             ?>
 
@@ -60,29 +59,7 @@ get_header();
                         <h1><?php the_title() ?></h1>
                         <?php the_content() ?>
 
-                        <?php
-                        for ($i = 1; $i <= $num_of_puffers; $i++) {
-
-                            if (get('post_puffer_description', $i) != "") {
-                                ?>
-                                <h2> <?php echo get('post_puffer_title', $i) ?></h2>
-                                
-                                    <?php echo get('post_puffer_description', $i) ?>
-                                
-                                <br />
-                                <!--p>
-                                    <img src="<?php echo get('post_puffer_image', $i); ?>" alt="Image" />
-                                </p-->
-
-                                <?php
-                            }
-                        }
-                        ?>
-
-                        <br />
-                        <p>
-                            <a class="button-em" href="<?php echo get_post_meta(get_the_ID(), 'timlid_url', true); ?>">TILMELD DIG KURSET HER</a>
-                        </p>
+               
                     </div>
                 </div>
 

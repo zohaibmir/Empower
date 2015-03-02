@@ -1,6 +1,6 @@
 <?php
 /*
-  Template Name: Retreat
+  Template Name: Featured Events
  */
 
 
@@ -66,7 +66,7 @@ get_header();
                 <div class="large-4 small-12 columns">
                     <div class="home-right retreat-right">                        
 
-                        <?php if (!dynamic_sidebar('sidebar2')) : ?>
+                        <?php if (!dynamic_sidebar('sidebar3')) : ?>
 
                         <?php endif; //end of right-sidebar  ?>
                       

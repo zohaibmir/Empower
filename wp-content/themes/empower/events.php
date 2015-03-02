@@ -72,9 +72,7 @@ get_header();
                     <div class="map-section">
                         <?php if (!dynamic_sidebar('sidebar1')) : ?>
                         <?php endif; //end of right-sidebar ?>
-                         <?php if (!dynamic_sidebar('sidebar2')) : ?>
-
-                        <?php endif; //end of right-sidebar ?>
+                        
                     </div>
                 </div>
             </div>

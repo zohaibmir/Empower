@@ -4,17 +4,17 @@ ul.languages {
     text-align:center;
     position:relative;
     z-index:1;
-    
+
     li {
         display:inline-block;
-        
+
         a {
             color:$white;
             padding-left:rem-calc(10);
             padding-right:rem-calc(10);
             font-size:rem-calc(20);
         }
-        
+
     }
 }
 
@@ -28,30 +28,43 @@ ul#menu-private , ul#menu-erhverv-menu {
     box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
 }
 
+.retreat-right ul {
+    margin-left: rem-calc(0);
+    li {
+         padding-top: rem-calc(25);
+        ul {
+            margin-left: rem-calc(0);
+            li {
+                padding-top: rem-calc(0);
+            }
+           
+        }
+    }
+}
 
 .topnav {
     display:inline-block !important;
-     @media #{$small-only} {
+    @media #{$small-only} {
         display:block !important;
-     }
+    }
     text-align:center;
     position:relative;
     text-align:left;
     border-bottom:solid 1px $etheme3;
     margin-top:rem-calc(15);
     li {
-        
+
         text-transform:uppercase;
         font-size:17px;
         font-family: $font-BrandonGrotesque-Bold;     
-        
-        
+
+
         &:hover {
             ul {
                 display:block;
             }
         }
-        
+
         ul {
             position:absolute;
             z-index:100;
@@ -76,25 +89,25 @@ ul#menu-private , ul#menu-erhverv-menu {
                     display:block;
                     background-color:$white;                    
                     &:after {}
-                    
+
                 }
-                
+
                 .dropdown {
                     margin: -55px 0 0 250px;                     
                     list-style: none;    
                     background:transparent;
                     opacity: 1;
                     visibility:hidden; 
-                    
+
                     li:first-child {
-                    a {                     
-                       &:before {
-                            content:"►";
-                            color:$white;
-                            width:10px;
-                            position:absolute;
-                            left:-12px;
-                        }
+                        a {                     
+                            &:before {
+                                content:"►";
+                                color:$white;
+                                width:10px;
+                                position:absolute;
+                                left:-12px;
+                            }
                         }
 
                         padding-left:0;
@@ -119,13 +132,16 @@ ul#menu-private , ul#menu-erhverv-menu {
                 }
 
                 &.sub-level {
-                  .dropdown {
-                    margin: -55px 0 0 260px;    
+                    .dropdown {
+                        margin: -55px 0 0 260px;    
                     }
                 }
             }
         }
-        
-        
+
+
+    }
+    .nav-silent {
+        cursor:none;
     }
 }

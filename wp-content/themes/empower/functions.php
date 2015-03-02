@@ -36,12 +36,22 @@ function frii_register_sidebars() {
 
     register_sidebar(array(
         'id' => 'sidebar2',
-        'name' => 'Events List',
+        'name' => 'Retreat Events',
         'description' => '',
         'before_widget' => '',
         'after_widget' => '',
-        'before_title' => '',
-        'after_title' => '',
+        'before_title' => '<h2>',
+        'after_title' => '</h2>',
+    ));
+    
+     register_sidebar(array(
+        'id' => 'sidebar3',
+        'name' => 'Featured Events',
+        'description' => '',
+        'before_widget' => '',
+        'after_widget' => '',
+        'before_title' => '<h2>',
+        'after_title' => '</h2>',
     ));
     /*
       to add more sidebars or widgetized areas, just copy

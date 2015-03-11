@@ -141,7 +141,7 @@ ul#menu-private , ul#menu-erhverv-menu {
 
 
     }
-    .nav-silent {
-        cursor:none;
+    .nav-silent > a:first-child {
+        cursor:default;
     }
 }

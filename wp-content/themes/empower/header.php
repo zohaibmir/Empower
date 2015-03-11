@@ -44,7 +44,9 @@ else if($theme == 1390) {
         <header>
             <div class="row collapse">
                 <div class="large-4 small-12 columns">
+                    <?php if ($theme != 1396 && $theme != 1390) { ?>
                     <a href="http://paludanempower.dk/om-paludan-empower/" class="welcome-link">Velkommen to PaludanEmpower</a>
+                    <?php } ?>
                     <div class="topnav-section">
                         <ul class="topnav">
                             <li class="has-dropdown">Menu

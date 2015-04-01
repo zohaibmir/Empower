@@ -1,3 +1,4 @@
+/*
 @font-face {
     font-family: 'BrandonGrotesque';
     src: url('../fonts/Brandon_reg.otf');    
@@ -12,6 +13,22 @@
     font-family: 'BrandonGrotesque-Bold';
     src: url('../fonts/Brandon_bld.otf');    
 }
+*/
+@font-face {
+    font-family: 'BrandonGrotesque';
+    src: url('../fonts/ny font-01.eps');    
+}
+
+@font-face {
+    font-family: 'BrandonGrotesque-Light';
+    src: url('../fonts/ny font-02.eps');    
+}
+
+@font-face {
+    font-family: 'BrandonGrotesque-Bold';
+    src: url('../fonts/ny font-03.eps');    
+}
+
 
 
 $font-TimesNewRoman:'Times New Roman',Georgia,Serif;
@@ -19,7 +36,7 @@ $font-BrandonGrotesque-Regular: 'BrandonGrotesque','Source Sans Pro', sans-serif
 $font-BrandonGrotesque-Light: 'BrandonGrotesque-Light','Source Sans Pro', sans-serif;
 $font-BrandonGrotesque-Bold: 'BrandonGrotesque-Bold','Source Sans Pro', sans-serif;
 
-$default-font-size:20px;
+$default-font-size:17px;
 $font-size11: 11px;
 $font-size12: 12px;
 $font-size13: 13px;

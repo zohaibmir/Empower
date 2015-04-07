@@ -43,7 +43,7 @@ else if($theme == 1390) {
     <body>
         <header>
             <div class="row collapse">
-                <div class="large-4 small-12 columns">
+                <div class="large-4 medium-4 small-12 columns">
                     <?php if ($theme != 1396 && $theme != 1390) { ?>
                     <a href="http://paludanempower.dk/om-paludan-empower/" class="welcome-link">Velkommen to PaludanEmpower</a>
                     <?php } ?>
@@ -61,14 +61,14 @@ else if($theme == 1390) {
                          
                     </div>
                 </div>
-                <div class="large-4 small-12 columns">
+                <div class="large-4 medium-4 small-12 columns">
                     <div class="logo">
                         <a href="http://paludanempower.dk/"> <img src="<?php echo get_template_directory_uri(); ?>/images<?php echo $_SESSION["imagefolder"] ?>/small-logo.png" alt="Logo" /></a><br />
                         <span class="themename"><?php echo $_SESSION["themeName"]; ?></span>
 
                     </div>
                 </div>
-                <div class="large-4 small-12 columns header-right">
+                <div class="large-4  medium-4 small-12 columns header-right">
                     <a href="/nyhedsbrev" class="button-em">TILMELD NYHEDSBREV</a>
 
                 </div>

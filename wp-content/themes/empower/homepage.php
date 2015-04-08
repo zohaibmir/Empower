@@ -59,20 +59,29 @@ get_header();
                         <h1><?php the_title() ?></h1>
                         <?php the_content() ?>
 
-               
+
                     </div>
                 </div>
 
                 <div class="large-4 small-12 columns">
                     <div class="home-right">
-                        <h2>Anbefalinger</h2>
                         <?php
-                       
+                        $categoryId = 3;
+                        $title = $title = "Anbefalinger";
+                        if (get('page_category_id', 1, 1) != "") {
+                            $categoryId = get('page_category_id', 1, 1);
+                        }
+                        if (get('page_category_label', 1, 1) != "") {
+                            $title = get('page_category_label', 1, 1);
+                        }
+                        ?>
+                        <h2><?php echo $title ?></h2>
+                        <?php
                         $currentId = get_the_ID();
                         $args = array(
                             'posts_per_page' => 5,
                             'offset' => 0,
-                            'category' => '3',
+                            'category' => $categoryId,
                             'include' => '',
                             'exclude' => "$currentId",
                             'post_type' => 'post',

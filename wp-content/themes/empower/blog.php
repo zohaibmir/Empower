@@ -68,7 +68,7 @@ get_header();
                         <?php
                         $currentId = get_the_ID();
                         $args = array(
-                            'posts_per_page' => '',
+                            'posts_per_page' => '5000',
                             'offset' => 0,
                             'category' => '15',
                             'include' => '',
